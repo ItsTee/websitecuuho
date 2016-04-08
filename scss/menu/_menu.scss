@@ -1,0 +1,69 @@
+/* MENU */
+.menu .top-bar, .menu .top-bar ul {
+    background: #f47544;
+}
+.menu .top-bar {
+    border-top: 0.5px solid #fff;
+    position:relative;
+    padding: 0;
+    .is-dropdown-submenu {
+        min-width: 260px;
+    }
+    .dropdown.menu > li.is-dropdown-submenu-parent > a {
+        padding-right: 0;
+    }
+    .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+        border: none;
+    }
+    li > a {
+        color: #000;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+    }
+    li > a > i.fa.fa-angle-down {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+/*    li.active a {
+        background: #fd4903;
+    }
+    li.active a .fi-home {
+        margin-right: 0;
+    }*/
+  li > a:hover {
+        background: #2199e8;
+        color: #fff;
+    }
+    li.divider {
+        border-right: 1px solid #b86c01;
+        border-left: 1px solid #d7d4d4;
+    }
+    input[type="search"] {
+        color: #aeacac;
+        font-size: 0.82rem;
+        height: 1.838rem;
+        margin-top: 0.3rem;
+    }
+    button {
+        position: absolute;
+    }
+    .search-icon {
+        color: #cbcbcb;
+        top: 0.7rem;
+        right: 6.4rem;
+        border: none;
+        background: none;
+    }
+    li ul.lang {
+        margin-left: 10px;
+        li.lang {
+            display: table-cell;
+            padding: 0 3px 0 2px;
+            a {
+                padding: 0;
+            }
+        }
+    }
+}

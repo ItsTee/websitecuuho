@@ -1,0 +1,18 @@
+/* HEADER */
+.header-wrap {
+    height: 129px;
+    .header {
+        position: absolute;
+        top: 27px;
+        .company {
+            margin-top: 15px;
+            h6 {
+                color: #fff;
+            }
+            .uppercase {
+                @extend h6;
+                font-weight: bold;
+            }
+        }
+    }
+}
