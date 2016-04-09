@@ -16,6 +16,21 @@
         }
         
     }
+    #goTop {
+    bottom: 100px;
+    cursor: pointer;
+    display: none;
+    height: 35px;
+    width: 35px;
+    position: fixed;
+    right: 5%;
+    width: 44px;
+    z-index: 1000;
+}
+#goTop img{
+    height: 46px;
+    width: 46px;
+}
     
 }
 

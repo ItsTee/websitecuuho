@@ -14,7 +14,8 @@ $(document).ready(function () {
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.slider-news1'
+        asNavFor: '.slider-news1',
+        
     });
     $('.slider-news1').slick({
         slidesToShow: 3,
@@ -25,16 +26,27 @@ $(document).ready(function () {
         focusOnSelect: true,
         autoplay: true,
         speed: 500,
-        prevArrow: '.hot-news .prev',
-        nextArrow: '.hot-news .next',
+        arrows: false,
+//        prevArrow: '.hot-news .prev',
+//        nextArrow: '.hot-news .next',
     });
     $('.media-slider').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
-        prevArrow: '.hot-news .prev',
-        nextArrow: '.hot-news .next',
+        prevArrow: '.module-content .prev',
+        nextArrow: '.module-content .next',
     });
+    //back to top
+    $(window).scroll(function () {
+            if ($(this).scrollTop() > 100)
+                $('#goTop').fadeIn();
+            else
+                $('#goTop').fadeOut();
+        });
+        $('#goTop').click(function () {
+            $('body,html').animate({scrollTop: 0}, 'slow');
+        });
 
 });

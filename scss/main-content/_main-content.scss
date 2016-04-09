@@ -4,49 +4,61 @@
     /*    padding: 0 0.7rem;*/
     background: #fff;
     .small-12.medium-12.large-12.columns {
-        .date p{
-            font-size: 0.8rem;
-            margin: 5px;
+        padding: 0px;   
+    .date{
+        margin-left:9px;
+        margin-right: 1.45rem; 
+        border:1px solid#ccc;
+        background:#e4eff8;
+        p{
+            font-size: 0.8rem;            
             font-weight: bold;
             color: #333;
+            margin-bottom: 0px;
+            margin-left: 0.3rem;
+            margin-top: 0.2rem;
+            margin-bottom: 0.2rem;
         }
-        padding: 0px;
-    }
-    .date{
-        margin:10px;
-        border:1px solid#ccc;
-        .date p {
+/*        .date p {
             background: #fff;
             padding: 0.2rem 0 0.2rem 0.5rem;
             margin-bottom: 0.8rem;
 
-        }
+        }*/
+    }
     }
 
     .slick-track {
         background: #fff;
-        padding-bottom: 1rem;
+/*        padding-bottom: 1rem;*/
+    }
+    .slider-news1 .slick-track{
+        height: 70px;
     }
     .small-slider.slick-slide {
-        padding-left: 1rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
     }
     .small-slider {
         img {
             position: relative;
         }
         .title {
-            text-align: center;
+            text-align: left;
+            margin-left: 0.3rem;
         }
         h6 a {
             position: absolute;
-            top: 5rem;
+            top: 70%;
             text-transform: uppercase;
             color: #fff;
-            font-weight: 600;            
+            font-weight: 600;
+            background: rgba(0, 0, 0, 0.5);
         }
+        
     }
     .Rescue-operations , .Maritime-Information , .album {
-        margin-bottom: 0.9rem;
+/*        margin-bottom: 0.9rem;*/
     }
     ul {
         list-style: none;
@@ -57,21 +69,24 @@
     }
     .small-12.medium-5.large-5.columns {
         min-height: 400px;
-        padding-top: 20px;
+/*        padding-top: 20px;*/
     }
+    .small-12.medium-7.large-7.columns {       
+            min-height: 400px;
+/*            padding-top: 20px;*/
+            .title-new {
+                hr{
+                    margin-top: 0.5rem;
+                    
+                }
+            }
+        }
+    
     .Rescue-operations , .Maritime-Information {
         .large-5.columns {
             border-right: 1px solid #dad9d9;
         }
-        .small-12.medium-7.large-7.columns {       
-            min-height: 400px;
-            padding-top: 20px;
-            .title-new {
-                hr{
-                    margin-top: 0.5rem;
-                }
-            }
-        }
+        
     }
     .module-content{
         .row{           
@@ -85,5 +100,32 @@
     }
     .slider-news1.slick-initialized.slick-slider {
         margin-top: 10px;
+    }
+    .slick-list.draggable {
+    margin-bottom: 10px;
+    }
+    .slider-footer.slick-slide{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .controllers .prev.slick-arrow{
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        position: absolute;
+        top:207%;
+        float: left;
+        left: 17%;
+            
+    }
+    .controllers .next.slick-arrow{
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 30px;
+        position: absolute;
+        top:207%;
+        float: right;
+        right: 17%;
+            
     }
 }
