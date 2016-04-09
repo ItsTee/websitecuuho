@@ -1,6 +1,6 @@
 /* MENU */
 .menu .top-bar, .menu .top-bar ul {
-    background: #f47544;
+    background: #f37544;
 }
 .menu .top-bar {
     border-top: 0.5px solid #fff;
@@ -16,25 +16,24 @@
         border: none;
     }
     li > a {
-        color: #000;
+        color: #fff;
         text-decoration: none;
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-transform: uppercase;
     }
     li > a > i.fa.fa-angle-down {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
     }
-/*    li.active a {
-        background: #fd4903;
+    li.active a {
+        background: #2199e8;
     }
     li.active a .fi-home {
         margin-right: 0;
-    }*/
-  li > a:hover {
+    }
+    li > a:hover {
         background: #2199e8;
-        color: #fff;
     }
     li.divider {
         border-right: 1px solid #b86c01;
@@ -44,7 +43,7 @@
         color: #aeacac;
         font-size: 0.82rem;
         height: 1.838rem;
-        margin-top: 0.3rem;
+        margin-top: 0.2rem;
     }
     button {
         position: absolute;

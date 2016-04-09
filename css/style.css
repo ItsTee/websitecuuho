@@ -7,7 +7,7 @@
   font-style: normal; }
 body {
   width: 960px;
-  font-size: 0.8125rem;
+  font-size: 0.6125rem;
   margin: 0 auto;
   padding: 0;
   font-family: Arial !important;
@@ -18,12 +18,16 @@ img {
 
 /* HEADER */
 .header-wrap {
-  height: 129px; }
+  height: 132px; }
   .header-wrap .header {
     position: absolute;
-    top: 27px; }
+    top: 12px;
+    padding-left: 10px; }
+    .header-wrap .header .logo {
+      max-width: 20rem; }
     .header-wrap .header .company {
-      margin-top: 15px; }
+      margin-top: 30px;
+      top: 27px; }
       .header-wrap .header .company h6, .header-wrap .header .company .uppercase {
         color: #fff; }
       .header-wrap .header .company .uppercase {
@@ -31,18 +35,12 @@ img {
 
 /* MENU */
 .menu .top-bar, .menu .top-bar ul {
-  background: #f47544; }
+  background: #f37544; }
 
 .menu .top-bar {
   border-top: 0.5px solid #fff;
   position: relative;
-  padding: 0;
-  /*    li.active a {
-          background: #fd4903;
-      }
-      li.active a .fi-home {
-          margin-right: 0;
-      }*/ }
+  padding: 0; }
   .menu .top-bar .is-dropdown-submenu {
     min-width: 260px; }
   .menu .top-bar .dropdown.menu > li.is-dropdown-submenu-parent > a {
@@ -50,17 +48,20 @@ img {
   .menu .top-bar .dropdown.menu > li.is-dropdown-submenu-parent > a::after {
     border: none; }
   .menu .top-bar li > a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     text-transform: uppercase; }
   .menu .top-bar li > a > i.fa.fa-angle-down {
     padding-left: 0.5rem;
     padding-right: 0.5rem; }
+  .menu .top-bar li.active a {
+    background: #2199e8; }
+  .menu .top-bar li.active a .fi-home {
+    margin-right: 0; }
   .menu .top-bar li > a:hover {
-    background: #2199e8;
-    color: #fff; }
+    background: #2199e8; }
   .menu .top-bar li.divider {
     border-right: 1px solid #b86c01;
     border-left: 1px solid #d7d4d4; }
@@ -68,7 +69,7 @@ img {
     color: #aeacac;
     font-size: 0.82rem;
     height: 1.838rem;
-    margin-top: 0.3rem; }
+    margin-top: 0.2rem; }
   .menu .top-bar button {
     position: absolute; }
   .menu .top-bar .search-icon {
@@ -88,36 +89,50 @@ img {
 /* MAIN CONTENT */
 /* LEFT SIDEBAR */
 .main-content .news, .main-content .hot-center, .main-content .quick-link {
-  margin-bottom: 0.9rem; }
+  margin-bottom: 0.9rem;
+  border: 1px solid #ccc; }
 .main-content .module-header h6, .main-content .module-header .header-wrap .header .company .uppercase, .header-wrap .header .company .main-content .module-header .uppercase {
-  background: #f47544;
-  color: #000;
+  background: #f37544;
+  color: #fff;
   padding: 0.5em;
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 0; }
 .main-content .module-content {
-  background: #fff;
-  padding: 0.2rem 0.5rem; }
+  background: #fff; }
   .main-content .module-content p {
-    margin-bottom: 0.2rem; }
+    margin-bottom: 0.2rem;
+    font-size: 12px;
+    padding: 10px 0px; }
     .main-content .module-content p a {
       text-decoration: none;
       font-size: 0.8rem;
-      color: #000;
+      color: #333;
       font-weight: 600; }
       .main-content .module-content p a i.fa.fa-anchor {
         color: #ff6b26;
         font-weight: 600;
         margin-right: 0.3rem; }
+  .main-content .module-content hr {
+    margin: 10px 0px; }
 
 .main-content {
   /*    padding: 0 0.7rem;*/
-  background: #ebebeb; }
-  .main-content .date p {
-    background: #dbd9d9;
-    padding: 0.2rem 0 0.2rem 0.5rem;
-    margin-bottom: 0.8rem; }
+  background: #fff; }
+  .main-content .small-12.medium-12.large-12.columns {
+    padding: 0px; }
+    .main-content .small-12.medium-12.large-12.columns .date p {
+      font-size: 0.8rem;
+      margin: 5px;
+      font-weight: bold;
+      color: #333; }
+  .main-content .date {
+    margin: 10px;
+    border: 1px solid #ccc; }
+    .main-content .date .date p {
+      background: #fff;
+      padding: 0.2rem 0 0.2rem 0.5rem;
+      margin-bottom: 0.8rem; }
   .main-content .slick-track {
     background: #fff;
     padding-bottom: 1rem; }
@@ -126,40 +141,37 @@ img {
   .main-content .small-slider img {
     position: relative; }
   .main-content .small-slider .title {
-    text-align: left; }
+    text-align: center; }
   .main-content .small-slider h6 a, .main-content .small-slider .header-wrap .header .company .uppercase a, .header-wrap .header .company .main-content .small-slider .uppercase a {
     position: absolute;
     top: 5rem;
     text-transform: uppercase;
     color: #fff;
-    font-weight: 600;
-    font-size: 0.8rem;
-    margin-left: 0.8rem; }
-  .main-content .slider-footer.slick-slide {
-    padding: 0.8rem; }
-  .main-content .hot-news, .main-content .Rescue-operations, .main-content .Maritime-Information, .main-content .album {
+    font-weight: 600; }
+  .main-content .Rescue-operations, .main-content .Maritime-Information, .main-content .album {
     margin-bottom: 0.9rem; }
   .main-content ul {
-    list-style: none; }
-  .main-content .title-new > ul {
-    padding-top: 0.8rem; }
+    list-style: none;
+    margin-left: 0.8rem; }
+  .main-content .small-12.medium-3.large-3.columns {
+    padding: 0.5rem; }
+  .main-content .small-12.medium-5.large-5.columns {
+    min-height: 400px;
+    padding-top: 20px; }
   .main-content .Rescue-operations .large-5.columns, .main-content .Maritime-Information .large-5.columns {
-    border-right: 1px solid #dad9d9;
-    margin-top: 0.8rem; }
-
-.footer {
-  height: 129px; }
-  .footer .address {
-    background: #f47544;
-    padding-top: 1rem; }
-    .footer .address p {
-      text-align: center;
-      font-size: 0.9rem;
-      color: #fff;
-      line-height: 0.8em; }
-    .footer .address h6, .footer .address .header-wrap .header .company .uppercase, .header-wrap .header .company .footer .address .uppercase {
-      text-align: center;
-      color: #fff;
-      padding-bottom: 1em; }
+    border-right: 1px solid #dad9d9; }
+  .main-content .Rescue-operations .small-12.medium-7.large-7.columns, .main-content .Maritime-Information .small-12.medium-7.large-7.columns {
+    min-height: 400px;
+    padding-top: 20px; }
+    .main-content .Rescue-operations .small-12.medium-7.large-7.columns .title-new hr, .main-content .Maritime-Information .small-12.medium-7.large-7.columns .title-new hr {
+      margin-top: 0.5rem; }
+  .main-content .module-content .row {
+    border: 1px solid #ccc;
+    margin: 0px;
+    margin-top: 10px; }
+  .main-content .slick-track {
+    margin-top: 10px; }
+  .main-content .slider-news1.slick-initialized.slick-slider {
+    margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */

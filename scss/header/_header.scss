@@ -1,11 +1,16 @@
 /* HEADER */
 .header-wrap {
-    height: 129px;
+    height: 132px;
     .header {
         position: absolute;
-        top: 27px;
+        top: 12px;
+        padding-left:10px;
+        .logo {
+            max-width: 20rem;
+        }
         .company {
-            margin-top: 15px;
+            margin-top: 30px;
+            top: 27px;
             h6 {
                 color: #fff;
             }

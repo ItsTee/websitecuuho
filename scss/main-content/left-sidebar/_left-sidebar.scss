@@ -2,10 +2,11 @@
 .main-content {
     .news , .hot-center , .quick-link {
         margin-bottom: 0.9rem;
+        border: 1px solid #ccc;
     }
     .module-header h6 {
-        background: #f47544;
-        color: #000;
+        background: #f37544;
+        color: #fff;
         padding: 0.5em;
         font-weight: 600;
         font-size: 0.9rem;
@@ -13,20 +14,24 @@
     }
     .module-content {
         background: #fff;
-        padding: 0.2rem 0.5rem;
         p {
             margin-bottom: 0.2rem;
+            font-size:12px;
+            padding:10px 0px;
             a {
                 text-decoration: none;
                 font-size: 0.8rem;
-                color: #000;
+                color: #333;
                 font-weight: 600;
                 i.fa.fa-anchor {
                     color: #ff6b26;
                     font-weight: 600;
                     margin-right: 0.3rem;
                 }
-            }
+            }          
+        }
+        hr{
+            margin: 10px 0px;
         }
     }
 }
