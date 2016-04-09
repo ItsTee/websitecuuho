@@ -192,22 +192,23 @@ img {
   .main-content .slider-footer.slick-slide {
     margin-left: 0.5rem;
     margin-right: 0.5rem; }
+  .main-content .controllers {
+    bottom: 100px;
+    position: relative; }
   .main-content .controllers .prev.slick-arrow {
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     font-size: 30px;
     position: absolute;
-    top: 207%;
     float: left;
-    left: 17%; }
+    left: -1%; }
   .main-content .controllers .next.slick-arrow {
     color: #fff;
     background: rgba(0, 0, 0, 0.5);
     font-size: 30px;
     position: absolute;
-    top: 207%;
     float: right;
-    right: 17%; }
+    right: -1%; }
 
 .footer {
   height: 129px; }

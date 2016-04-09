@@ -108,14 +108,18 @@
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
+    .controllers {
+    bottom: 100px;
+    position: relative;
+}
     .controllers .prev.slick-arrow{
         color: #fff;
         background: rgba(0, 0, 0, 0.5);
         font-size: 30px;
         position: absolute;
-        top:207%;
+        
         float: left;
-        left: 17%;
+        left: -1%;
             
     }
     .controllers .next.slick-arrow{
@@ -123,9 +127,9 @@
         background: rgba(0, 0, 0, 0.5);
         font-size: 30px;
         position: absolute;
-        top:207%;
+        
         float: right;
-        right: 17%;
+        right: -1%;
             
     }
 }
